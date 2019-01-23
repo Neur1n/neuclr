@@ -148,3 +148,32 @@ call neutil#palette#Highlight('SpellCap', 'NONE', 'NONE', 'undercurl', s:plt.red
 call neutil#palette#Highlight('SpellLocal', 'NONE', 'NONE', 'undercurl', s:plt.cyan)
 call neutil#palette#Highlight('SpellRare', 'NONE', 'NONE', 'undercurl', s:plt.purple)
 "}}}
+
+
+"****************************************************************** Terminal{{{
+if has('nvim')
+  let g:terminal_color_0 = s:plt.bgm.g
+  let g:terminal_color_8 = s:plt.gray.g
+
+  let g:terminal_color_1 = s:plt.red.g
+  let g:terminal_color_9 = s:plt.red.g
+
+  let g:terminal_color_2 = s:plt.green.g
+  let g:terminal_color_10 = s:plt.green.g
+
+  let g:terminal_color_3 = s:plt.yellow.g
+  let g:terminal_color_11 = s:plt.yellow.g
+
+  let g:terminal_color_4 = s:plt.blue.g
+  let g:terminal_color_12 = s:plt.blue.g
+
+  let g:terminal_color_5 = s:plt.purple.g
+  let g:terminal_color_13 = s:plt.purple.g
+
+  let g:terminal_color_6 = s:plt.cyan.g
+  let g:terminal_color_14 = s:plt.cyan.g
+
+  let g:terminal_color_7 = s:plt.fgs.g
+  let g:terminal_color_15 = s:plt.fgm.g
+endif
+"}}}
