@@ -70,7 +70,7 @@ call neutil#palette#Highlight('StatusLine', s:plt.fgm, s:plt.bgh)
 call neutil#palette#Highlight('StatusLineNC', s:plt.bgh, s:plt.fgm, 'inverse')
 call neutil#palette#Highlight('TabLineFill', 'fg', s:plt.bgh)
 call neutil#palette#Highlight('Todo', 'fg', 'bg', 'bold,italic')
-call neutil#palette#Highlight('Visual', 'NONE', s:plt.gray)
+call neutil#palette#Highlight('Visual', 'NONE', s:plt.bgs)
 call neutil#palette#Highlight('WildMenu', s:plt.blue, s:plt.bgs, 'bold')
 
 highlight! link Conceal NeuBlue
