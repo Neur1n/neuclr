@@ -3,22 +3,22 @@ scriptencoding utf-8
 function! neuclr#xml#Highlight() abort
   highlight! link docbkKeyword NeuCyanBold
 
-  highlight! link dtdFunction GruvboxGray
-  highlight! link dtdParamEntityPunct GruvboxGray
-  highlight! link dtdParamEntityDPunct GruvboxGray
-  highlight! link dtdTagName GruvboxPurple
+  highlight! link dtdFunction NeuGrayM
+  highlight! link dtdParamEntityPunct NeuGrayM
+  highlight! link dtdParamEntityDPunct NeuGrayM
+  highlight! link dtdTagName NeuPurple
 
   highlight! link xmlAttrib NeuCyan
-  highlight! link xmlAttribPunct GruvboxGray
-  highlight! link xmlCdataStart GruvboxGray
-  highlight! link xmlCdataCdata GruvboxPurple
-  highlight! link xmlDocTypeDecl GruvboxGray
-  highlight! link xmlDocTypeKeyword GruvboxPurple
-  highlight! link xmlEndTag GruvboxBlue
-  highlight! link xmlEntity GruvboxOrange
-  highlight! link xmlEntityPunct GruvboxOrange
-  highlight! link xmlEqual GruvboxBlue
-  highlight! link xmlProcessingDelim GruvboxGray
-  highlight! link xmlTag GruvboxBlue
-  highlight! link xmlTagName GruvboxBlue
+  highlight! link xmlAttribPunct NeuGrayM
+  highlight! link xmlCdataStart NeuGrayM
+  highlight! link xmlCdataCdata NeuPurple
+  highlight! link xmlDocTypeDecl NeuGrayM
+  highlight! link xmlDocTypeKeyword NeuPurple
+  highlight! link xmlEndTag NeuBlue
+  highlight! link xmlEntity NeuOrange
+  highlight! link xmlEntityPunct NeuOrange
+  highlight! link xmlEqual NeuBlue
+  highlight! link xmlProcessingDelim NeuGrayM
+  highlight! link xmlTag NeuBlue
+  highlight! link xmlTagName NeuBlue
 endfunction

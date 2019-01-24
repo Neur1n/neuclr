@@ -20,7 +20,7 @@ function! neuclr#markdown#Highlight() abort
   highlight! link markdownH4 NeuYellowBold
   highlight! link markdownH5 NeuYellow
   highlight! link markdownH6 NeuYellow
-  highlight! link markdownHeadingRule NeuGray
+  highlight! link markdownHeadingRule NeuGrayM
 
   highlight! link markdownHeadingDelimiter NeuOrange
   highlight! link markdownLinkDelimiter NeuFgH
@@ -28,10 +28,10 @@ function! neuclr#markdown#Highlight() abort
   highlight! link markdownUrlDelimiter NeuFgS
   highlight! link markdownUrlTitleDelimiter NeuGreen
 
-  highlight! link markdownBlockquote NeuGray
-  highlight! link markdownListMarker NeuGray
-  highlight! link markdownOrderedListMarker NeuGray
-  highlight! link markdownRule NeuGray
+  highlight! link markdownBlockquote NeuGrayM
+  highlight! link markdownListMarker NeuGrayM
+  highlight! link markdownOrderedListMarker NeuGrayM
+  highlight! link markdownRule NeuGrayM
   highlight! link markdownUrl NeuPurple
 
   highlight! link markdownIdDeclaration markdownLinkText

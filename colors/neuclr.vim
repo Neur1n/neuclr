@@ -33,7 +33,10 @@ call neutil#palette#Highlight('NeuFgS', s:plt.fgs)
 call neutil#palette#Highlight('NeuFgM', s:plt.fgm)
 call neutil#palette#Highlight('NeuFgH', s:plt.fgh)
 
-call neutil#palette#Highlight('NeuGray', s:plt.gray)
+call neutil#palette#Highlight('NeuGrayS', s:plt.grays)
+call neutil#palette#Highlight('NeuGrayM', s:plt.graym)
+call neutil#palette#Highlight('NeuGrayH', s:plt.grayh)
+
 call neutil#palette#Highlight('NeuRed', s:plt.red)
 call neutil#palette#Highlight('NeuOrange', s:plt.orange)
 call neutil#palette#Highlight('NeuYellow', s:plt.yellow)
@@ -42,7 +45,10 @@ call neutil#palette#Highlight('NeuCyan', s:plt.cyan)
 call neutil#palette#Highlight('NeuBlue', s:plt.blue)
 call neutil#palette#Highlight('NeuPurple', s:plt.purple)
 
-call neutil#palette#Highlight('NeuGrayBold', s:plt.gray, 'NONE', 'bold')
+call neutil#palette#Highlight('NeuGraySBold', s:plt.grays, 'NONE', 'bold')
+call neutil#palette#Highlight('NeuGrayMBold', s:plt.graym, 'NONE', 'bold')
+call neutil#palette#Highlight('NeuGrayHBold', s:plt.grayh, 'NONE', 'bold')
+
 call neutil#palette#Highlight('NeuRedBold', s:plt.red, 'NONE', 'bold')
 call neutil#palette#Highlight('NeuOrangeBold', s:plt.orange, 'NONE', 'bold')
 call neutil#palette#Highlight('NeuYellowBold', s:plt.yellow, 'NONE', 'bold')
@@ -58,7 +64,7 @@ call neutil#palette#Highlight('Normal', s:plt.fgm, s:plt.bgm)
 
 "******************************************************************* General{{{
 call neutil#palette#Highlight('ColorColumn', 'NONE', s:plt.bgs)
-call neutil#palette#Highlight('Comment', s:plt.gray, 'NONE', 'italic')
+call neutil#palette#Highlight('Comment', s:plt.graym, 'NONE', 'italic')
 call neutil#palette#Highlight('Cursor', 'NONE', 'NONE', 'inverse')
 call neutil#palette#Highlight('Error', s:plt.red, 'bg', 'bold,inverse')
 call neutil#palette#Highlight('ErrorMsg', 'bg', s:plt.red, 'bold')
@@ -70,20 +76,20 @@ call neutil#palette#Highlight('StatusLine', s:plt.fgm, s:plt.bgh)
 call neutil#palette#Highlight('StatusLineNC', s:plt.bgh, s:plt.fgm, 'inverse')
 call neutil#palette#Highlight('TabLineFill', 'fg', s:plt.bgh)
 call neutil#palette#Highlight('Todo', 'fg', 'bg', 'bold,italic')
-call neutil#palette#Highlight('Visual', 'NONE', s:plt.bgs)
+call neutil#palette#Highlight('Visual', 'NONE', s:plt.grayh)
 call neutil#palette#Highlight('WildMenu', s:plt.blue, s:plt.bgs, 'bold')
 
 highlight! link Conceal NeuBlue
 highlight! link CursorLineNr NeuYellow
 highlight! link Directory NeuGreenBold
-highlight! link FoldColumn NeuGray
-highlight! link LineNr NeuGray
+highlight! link FoldColumn NeuGrayM
+highlight! link LineNr NeuGrayM
 highlight! link ModeMsg NeuYellowBold
 highlight! link MoreMsg NeuYellowBold
-highlight! link NonText NeuGray
+highlight! link NonText NeuGrayM
 highlight! link Question NeuOrangeBold
 highlight! link Special NeuOrange
-highlight! link SpecialKey NeuGray
+highlight! link SpecialKey NeuGrayM
 highlight! link TabLineSel NeuGreen
 highlight! link Title NeuGreenBold
 highlight! link WarningMsg NeuRedBold
@@ -153,7 +159,7 @@ call neutil#palette#Highlight('SpellRare', 'NONE', 'NONE', 'undercurl', s:plt.pu
 "****************************************************************** Terminal{{{
 if has('nvim')
   let g:terminal_color_0 = s:plt.bgm.g
-  let g:terminal_color_8 = s:plt.gray.g
+  let g:terminal_color_8 = s:plt.graym.g
 
   let g:terminal_color_1 = s:plt.red.g
   let g:terminal_color_9 = s:plt.red.g
