@@ -76,7 +76,8 @@ call neutil#palette#Highlight('StatusLine', s:plt.fgm, s:plt.bgh)
 call neutil#palette#Highlight('StatusLineNC', s:plt.bgh, s:plt.fgm, 'inverse')
 call neutil#palette#Highlight('TabLineFill', 'fg', s:plt.bgh)
 call neutil#palette#Highlight('Todo', 'fg', 'bg', 'bold,italic')
-call neutil#palette#Highlight('Visual', 'NONE', s:plt.grayh)
+call neutil#palette#Highlight('Underlined', s:plt.blue, 'NONE', 'underline')
+call neutil#palette#Highlight('Visual', 'NONE', s:plt.grays)
 call neutil#palette#Highlight('WildMenu', s:plt.blue, s:plt.bgs, 'bold')
 
 highlight! link Conceal NeuBlue
@@ -154,7 +155,6 @@ call neutil#palette#Highlight('SpellCap', 'NONE', 'NONE', 'undercurl', s:plt.red
 call neutil#palette#Highlight('SpellLocal', 'NONE', 'NONE', 'undercurl', s:plt.cyan)
 call neutil#palette#Highlight('SpellRare', 'NONE', 'NONE', 'undercurl', s:plt.purple)
 "}}}
-
 
 "****************************************************************** Terminal{{{
 if has('nvim')
