@@ -7,7 +7,7 @@ catch /^Vim\%((\a\+)\)\=:E/
 endtry
 
 function! neuclr#html#Highlight() abort
-  call neutil#palette#Highlight('htmlLink', s:plt.fgs, 'NONE', 'underline')
+  call neutil#palette#Highlight('htmlLink', s:plt.fgh, 'NONE', 'underline')
   call neutil#palette#Highlight('htmlBold', 'fg', 'bg', 'bold')
   call neutil#palette#Highlight('htmlBoldUnderline', 'fg', 'bg', 'bold,underline')
   call neutil#palette#Highlight('htmlBoldItalic', 'fg', 'bg', 'bold,italic')

@@ -7,8 +7,10 @@ catch /^Vim\%((\a\+)\)\=:E/
 endtry
 
 function! neuclr#markdown#Highlight() abort
+  call neuclr#html#Highlight()
+
   call neutil#palette#Highlight('markdownItalic', s:plt.fgh, 'NONE', 'italic')
-  call neutil#palette#Highlight('markdownLinkText', s:plt.gray, 'none', 'underline')
+  call neutil#palette#Highlight('markdownLinkText', s:plt.graym, 'none', 'underline')
 
   highlight! link markdownCode NeuCyan
   highlight! link markdownCodeBlock NeuCyan
