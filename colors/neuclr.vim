@@ -70,6 +70,7 @@ call neutil#palette#Highlight('Error', s:plt.red, 'bg', 'bold,inverse')
 call neutil#palette#Highlight('ErrorMsg', 'bg', s:plt.red, 'bold')
 call neutil#palette#Highlight('Folded', s:plt.bgs, 'bg', 'italic')
 call neutil#palette#Highlight('IncSearch', s:plt.orange, 'bg', 'inverse')
+call neutil#palette#Highlight('MatchParen', 'NONE', s:plt.grays, 'bold')
 call neutil#palette#Highlight('Search', s:plt.yellow, 'bg', 'inverse')
 call neutil#palette#Highlight('SignColumn', 'NONE', 'bg')
 call neutil#palette#Highlight('StatusLine', s:plt.fgm, s:plt.bgh)
@@ -100,7 +101,6 @@ highlight! link lCursor Cursor
 highlight! link vCursor Cursor
 highlight! link CursorLine ColorColumn
 highlight! link CursorColumn ColorColumn
-highlight! link MatchParen ColorColumn
 highlight! link TabLine TabLineFill
 highlight! link VertSplit Normal
 highlight! link VisualNOS Visual
