@@ -68,7 +68,6 @@ call neutil#palette#Highlight('Comment', s:plt.graym, 'NONE', 'italic')
 call neutil#palette#Highlight('Cursor', 'NONE', 'NONE', 'inverse')
 call neutil#palette#Highlight('Error', s:plt.red, 'bg', 'bold,inverse')
 call neutil#palette#Highlight('ErrorMsg', 'bg', s:plt.red, 'bold')
-call neutil#palette#Highlight('Folded', s:plt.bgs, 'bg', 'italic')
 call neutil#palette#Highlight('IncSearch', s:plt.orange, 'bg', 'inverse')
 call neutil#palette#Highlight('MatchParen', 'NONE', s:plt.grays, 'bold')
 call neutil#palette#Highlight('Search', s:plt.yellow, 'bg', 'inverse')
@@ -84,7 +83,6 @@ call neutil#palette#Highlight('WildMenu', s:plt.blue, s:plt.bgs, 'bold')
 highlight! link Conceal NeuBlue
 highlight! link CursorLineNr NeuYellow
 highlight! link Directory NeuGreenBold
-highlight! link FoldColumn NeuGrayM
 highlight! link LineNr NeuGrayM
 highlight! link ModeMsg NeuYellowBold
 highlight! link MoreMsg NeuYellowBold
@@ -101,6 +99,8 @@ highlight! link lCursor Cursor
 highlight! link vCursor Cursor
 highlight! link CursorLine ColorColumn
 highlight! link CursorColumn ColorColumn
+highlight! link Folded Comment
+highlight! link FoldColumn Comment
 highlight! link TabLine TabLineFill
 highlight! link VertSplit Normal
 highlight! link VisualNOS Visual
